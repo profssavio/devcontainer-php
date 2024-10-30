@@ -8,7 +8,11 @@
             "extensions": [
                 "bmewburn.vscode-intelephense-client",
                 "felixfbecker.php-intellisense",
-                "xdebug.php-debug"
+                "xdebug.php-debug",
+                "MehediDracula.php-namespace-resolver",
+                "christian-kohler.path-intellisense",
+                "vscode-icons-team.vscode-icons",
+                "GitLab.gitlab-workflow"
             ],
             "settings": {
                 "php.validate.executablePath": "/usr/local/bin/php"
