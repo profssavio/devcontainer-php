@@ -25,3 +25,6 @@ COPY ../ /var/www/html/
 
 # Configuração php.ini
 COPY custom.ini /usr/local/etc/php/conf.d/custom.ini
+
+# Permissão para o usuário alterar o Shell
+RUN usermod -s /bin/bash www-data
