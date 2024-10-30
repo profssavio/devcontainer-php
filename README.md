@@ -1,7 +1,9 @@
 # REQUISITOS NECESSÁRIOS
 
-- **Docker** instalado
-- **VSCode** instalado
+Ter os sequintes aplicativcos instalados no computador
+
+- **Docker** 
+- **VSCode** 
 
 # DEVCONTAINER
 
