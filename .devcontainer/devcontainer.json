@@ -1,0 +1,20 @@
+{
+    "name": "PHP 8.3 with MySQL and Xdebug",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www/html",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "felixfbecker.php-intellisense",
+                "xdebug.php-debug"
+            ],
+            "settings": {
+                "php.validate.executablePath": "/usr/local/bin/php"
+            }
+        }
+    },
+    "postCreateCommand": "composer install",
+    "remoteUser": "www-data"
+}

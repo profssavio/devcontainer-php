@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: php-apache-etc
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "81:80"
+    volumes:
+      - ..:/var/www/html
+    networks:
+      - mynetwork
+
+  db:
+    image: mysql:9
+    container_name: mysql-etc
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: projeto
+      MYSQL_USER: etc
+      MYSQL_PASSWORD: 123456
+    ports:
+      - "3304:3306"
+    networks:
+      - mynetwork
+  
+  phpmyadmin:
+    image: phpmyadmin:5
+    container_name: phpmyadmin-etc
+    ports:
+      - 8086:80
+    restart: "no"
+    environment:
+      PMA_HOST: db
+    depends_on:
+      - db
+    networks:
+      - mynetwork  
+
+networks:
+  mynetwork:
