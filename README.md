@@ -9,6 +9,6 @@ Ter os sequintes aplicativos instalados no computador
 
 - PHP 8.3
 - MYSQL 9
-- PHPMYADMIN 5git 
+- PHPMYADMIN
 - XDEBUG
 - COMPOSER
