@@ -9,6 +9,21 @@ Ter os sequintes aplicativos instalados no computador
 
 - PHP 8.3
 - MYSQL 9
-- PHPMYADMIN
+- PHP MyAdmin
 - XDEBUG
 - COMPOSER
+
+# ACESSOS
+
+## Apache PHP
+
+http://localhost:81/src/teste.php
+
+## PHP MyAdmin
+
+http://localhost:8086
+
+- usuario: root
+- password: 123456
+- database: projeto
+
