@@ -1,6 +1,6 @@
 # REQUISITOS NECESSÁRIOS
 
-Ter os sequintes aplicativcos instalados no computador
+Ter os sequintes aplicativos instalados no computador
 
 - **Docker** 
 - **VSCode** 
@@ -9,6 +9,6 @@ Ter os sequintes aplicativcos instalados no computador
 
 - PHP 8.3
 - MYSQL 9
-- PHPMYADMIN 5
+- PHPMYADMIN 5git 
 - XDEBUG
 - COMPOSER
