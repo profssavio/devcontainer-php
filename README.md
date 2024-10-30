@@ -1,3 +1,11 @@
 # REQUISITOS NECESSÁRIOS
 
 - Ter o **Docker** instalado
+
+# DEVCONTAINER
+
+- PHP 8.3
+- MYSQL 9
+- PHPMYADMIN 5
+- XDEBUG
+- COMPOSER
