@@ -27,3 +27,5 @@ http://localhost:8086
 - password: 123456
 - database: projeto
 
+> Você pode utilizar o banco de dados **projeto** ou criar um novo
+
