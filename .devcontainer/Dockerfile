@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
-    git 
+    git \
+    curl 
 
 # Instalar extensões do PHP
 RUN docker-php-ext-install gd pdo pdo_mysql
@@ -20,6 +21,9 @@ COPY xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 
 # Ativar o mod_rewrite do Apache
 RUN a2enmod rewrite
+
+# Instalar o Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Copiar os arquivos do projeto para o diretório padrão do Apache
 COPY ../ /var/www/html/
