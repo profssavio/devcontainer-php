@@ -7,7 +7,13 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     libfreetype6-dev \
     git \
-    curl 
+    curl \
+    bash \
+    ca-certificates \
+    gcc \
+    g++ \
+    make \
+    && rm -rf /var/lib/apt/lists/*
 
 # Instalar extensões do PHP
 RUN docker-php-ext-install gd pdo pdo_mysql
