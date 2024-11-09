@@ -3,6 +3,14 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/var/www/html",
+    "features": {
+        "ghcr.io/devcontainers/features/node": "22",
+        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+            "plugins": "git dirhistory ssh-agent npm zsh-autosuggestions",
+            "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions",
+            "username": "node"
+        }
+    },
     "customizations": {
         "vscode": {
             "extensions": [
